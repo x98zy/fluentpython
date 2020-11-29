@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95a4704e-3af8-49f7-8f74-526eedd2bad2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/decorate/seq.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/magic_method/bisect_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/magic_method/format_demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,6 +16,8 @@
     <SUITE FILE_PATH="coverage/fluentpython$FrenchDeck.coverage" NAME="FrenchDeck Coverage Results" MODIFIED="1605797446796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/magic_method" />
     <SUITE FILE_PATH="coverage/fluentpython$mult_deco.coverage" NAME="mult_deco Coverage Results" MODIFIED="1601304465985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/decorate" />
     <SUITE FILE_PATH="coverage/fluentpython$seq.coverage" NAME="seq Coverage Results" MODIFIED="1606630179449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/decorate" />
+    <SUITE FILE_PATH="coverage/fluentpython$format_demo.coverage" NAME="format_demo Coverage Results" MODIFIED="1606632677939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/magic_method" />
+    <SUITE FILE_PATH="coverage/fluentpython$bisect_demo.coverage" NAME="bisect_demo Coverage Results" MODIFIED="1606633565426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/magic_method" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="126974261">
@@ -34,7 +37,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="5" />
+          <entry key="py" value="8" />
           <entry key="pyi" value="1" />
           <entry key="txt" value="1" />
         </counts>
@@ -42,20 +45,20 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="5" />
+          <entry key="Python" value="8" />
           <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1571" />
+          <entry key="py" value="2529" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="1571" />
+          <entry key="Python" value="2529" />
         </counts>
       </usages-collector>
     </session>
@@ -88,11 +91,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/decorate/seq.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="1230">
               <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/magic_method/bisect_demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+                <marker date="1606633565338" expanded="true" signature="176:181" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/magic_method/format_demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
@@ -116,6 +141,8 @@
         <option value="$USER_HOME$/Desktop/linux.txt" />
         <option value="$PROJECT_DIR$/magic_method/FrenchDeck.py" />
         <option value="$PROJECT_DIR$/decorate/seq.py" />
+        <option value="$PROJECT_DIR$/magic_method/format_demo.py" />
+        <option value="$PROJECT_DIR$/magic_method/bisect_demo.py" />
       </list>
     </option>
   </component>
@@ -181,7 +208,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.seq">
+  <component name="RunManager" selected="Python.bisect_demo">
     <configuration name="FrenchDeck" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="fluentpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -196,6 +223,50 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/magic_method/FrenchDeck.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="bisect_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="fluentpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/magic_method" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/magic_method/bisect_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="format_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="fluentpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/magic_method" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/magic_method/format_demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -252,9 +323,13 @@
       <item itemvalue="Python.mult_deco" />
       <item itemvalue="Python.FrenchDeck" />
       <item itemvalue="Python.seq" />
+      <item itemvalue="Python.format_demo" />
+      <item itemvalue="Python.bisect_demo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bisect_demo" />
+        <item itemvalue="Python.format_demo" />
         <item itemvalue="Python.seq" />
         <item itemvalue="Python.FrenchDeck" />
         <item itemvalue="Python.mult_deco" />
@@ -328,13 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/542407207/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15540">
-          <caret line="518" column="7" selection-start-line="518" selection-start-column="7" selection-end-line="518" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python3.6.3安装位置/Lib/collections/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10830">
@@ -349,6 +417,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/decorate/seq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/542407207/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="4751" column="8" selection-start-line="4751" selection-start-column="8" selection-end-line="4751" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/magic_method/FrenchDeck.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="653">
@@ -360,10 +442,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/decorate/seq.py">
+    <entry file="file://$PROJECT_DIR$/magic_method/format_demo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magic_method/bisect_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1606633565338" expanded="true" signature="176:181" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
