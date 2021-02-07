@@ -6,6 +6,7 @@ from collections import abc
 class FrozenJson():
     def __init__(self,mapping):
         self._data=dict(mapping)
+    #通过obj.attr会调用__getattr__魔法函数
     def __getattr__(self, item):
         if hasattr(self._data,item):
             return getattr(obj,item)
