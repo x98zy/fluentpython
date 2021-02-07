@@ -20,7 +20,26 @@ class FrozenJson():
         else:
             return obj
 
+
+#使用__new__方法进行改进
+class FrozenJsonAgain():
+    def __new__(cls,arg):
+        if isinstance(arg,abc.Mapping):
+            return super().__new__(cls)
+        elif isinstance(arg,abc.MutableSequence):
+            return [cls(item) for item in arg]
+        else:
+            return arg
+    def __init__(self,mapping):
+        self._data=dict(mapping)
+    def __getattr__(self, item):
+        if hasattr(self._data,item):
+            return getattr(obj,item)
+        else:
+            return FrozenJsonAgain(self._data[item])
+
+
 if __name__=="__main__":
     dict1={"grade":"primary","teacher":{"Alice":1,"Bob":2,"Jack":3},"students":["Fang","Justbin"]}
-    frozen=FrozenJson(dict1)
-    print(frozen.teacher.Alice)
+    frozen=FrozenJsonAgain(dict1)
+    print(frozen.students)
