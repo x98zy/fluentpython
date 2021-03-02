@@ -4,12 +4,20 @@ AF_INET表示的是IPV4，SOCK_STREAM表示是TCP协议，然后调用bind方法
 客户端的请求地址,然后调用新生成的socket对象的recv方法接受数据或者send方法发送数据"""
 
 import socket
+import threading
 
 server=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 server.bind(("0.0.0.0",8000))
 server.listen()
-sock,addr=server.accept()
 
-print(addr)
-data=sock.recv(1024)
-print(data.decode("utf8"))
+def handle_socket(sock,addr):
+    while True:
+        data = sock.recv(1024)
+        print(data.decode("utf8"))
+        re_data = input()
+        sock.send(re_data.encode("utf8"))
+
+while True:
+    sock,addr=server.accept()
+    thread1=threading.Thread(target=handle_socket,args=(sock,addr))
+    thread1.start()
