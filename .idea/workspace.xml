@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95a4704e-3af8-49f7-8f74-526eedd2bad2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/threading_programming/thread_communicate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/threading_programming/thread_queue.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +18,7 @@
     <SUITE FILE_PATH="coverage/fluentpython$calll_class.coverage" NAME="calll_class Coverage Results" MODIFIED="1608377682179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/function_people" />
     <SUITE FILE_PATH="coverage/fluentpython$FrenchDeck.coverage" NAME="FrenchDeck Coverage Results" MODIFIED="1605797446796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/magic_method" />
     <SUITE FILE_PATH="coverage/fluentpython$mult_deco.coverage" NAME="mult_deco Coverage Results" MODIFIED="1601304465985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/decorate" />
+    <SUITE FILE_PATH="coverage/fluentpython$thread_queue.coverage" NAME="thread_queue Coverage Results" MODIFIED="1615385249083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/threading_programming" />
     <SUITE FILE_PATH="coverage/fluentpython$dict_to_attr.coverage" NAME="dict_to_attr Coverage Results" MODIFIED="1612698212967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meta_programming" />
     <SUITE FILE_PATH="coverage/fluentpython$mult_thread.coverage" NAME="mult_thread Coverage Results" MODIFIED="1615382327303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/threading_programming" />
     <SUITE FILE_PATH="coverage/fluentpython$thread_communicate.coverage" NAME="thread_communicate Coverage Results" MODIFIED="1615384057754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/threading_programming" />
@@ -46,7 +46,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="26" />
+          <entry key="py" value="28" />
           <entry key="pyi" value="6" />
           <entry key="txt" value="1" />
         </counts>
@@ -54,20 +54,20 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="26" />
+          <entry key="Python" value="28" />
           <entry key="PythonStub" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="6684" />
+          <entry key="py" value="6801" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="6684" />
+          <entry key="Python" value="6801" />
         </counts>
       </usages-collector>
     </session>
@@ -120,16 +120,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/threading_programming/thread_communicate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="-9">
+              <caret line="25" selection-start-line="25" selection-end-line="31" />
               <folding>
                 <element signature="e#23#34#0" expanded="true" />
                 <marker date="1615384388822" expanded="true" signature="130:135" ph="..." />
                 <marker date="1615384388822" expanded="true" signature="307:711" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/threading_programming/thread_queue.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <folding>
+                <element signature="e#16#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/Python3.6.3安装位置/Lib/queue.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -187,6 +208,7 @@
         <option value="$PROJECT_DIR$/socket_programming/socket_server.py" />
         <option value="$PROJECT_DIR$/threading_programming/mult_thread.py" />
         <option value="$PROJECT_DIR$/threading_programming/thread_communicate.py" />
+        <option value="$PROJECT_DIR$/threading_programming/thread_queue.py" />
       </list>
     </option>
   </component>
@@ -247,29 +269,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.thread_communicate">
-    <configuration name="LineItem" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="fluentpython" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/meta_programming" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/meta_programming/LineItem.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.thread_queue">
     <configuration name="mult_thread" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="fluentpython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -358,20 +358,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="thread_queue" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="fluentpython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/threading_programming" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/threading_programming/thread_queue.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.LineItem" />
       <item itemvalue="Python.socket_server" />
       <item itemvalue="Python.socket_client" />
       <item itemvalue="Python.mult_thread" />
       <item itemvalue="Python.thread_communicate" />
+      <item itemvalue="Python.thread_queue" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.thread_queue" />
         <item itemvalue="Python.thread_communicate" />
         <item itemvalue="Python.mult_thread" />
         <item itemvalue="Python.socket_client" />
         <item itemvalue="Python.socket_server" />
-        <item itemvalue="Python.LineItem" />
       </list>
     </recent_temporary>
   </component>
@@ -392,8 +414,8 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19436997" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989429" visible="true" weight="0.19436997" />
+      <window_info id="Structure" order="1" sideWeight="0.5010571" side_tool="true" visible="true" weight="0.19436997" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -596,13 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/socket_programming/socket_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python3.6.3安装位置/Lib/threading.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -637,6 +652,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Python3.6.3安装位置/Lib/queue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/threading_programming/mult_thread.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -650,14 +672,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/socket_programming/socket_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/threading_programming/thread_communicate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        <state relative-caret-position="-9">
+          <caret line="25" selection-start-line="25" selection-end-line="31" />
           <folding>
             <element signature="e#23#34#0" expanded="true" />
             <marker date="1615384388822" expanded="true" signature="130:135" ph="..." />
             <marker date="1615384388822" expanded="true" signature="307:711" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threading_programming/thread_queue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#16#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
