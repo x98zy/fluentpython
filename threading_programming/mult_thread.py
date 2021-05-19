@@ -18,6 +18,7 @@ if __name__=="__main__":
     #设置为守护线程
     """此处会打印出get html detail end和get url list end，因为thread2没有设置为守护线程
     而thread2的运行时间大约是4秒，对于一般的线程主线程会等待其执行完再退出"""
+    #主线程会等到没有非守护线程存活才会退出
     thread1.setDaemon(True)
     start_time = time.time()
     thread1.start()
